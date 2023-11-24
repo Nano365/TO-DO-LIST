@@ -7,47 +7,50 @@ body {
     flex-direction: column;
     align-items: center;
 
-    .form {
-        background-color: rgb(232, 232, 232);
-        margin: 20px;
-        width: 600px;
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 5px;
     
-        .input {
-            width: 400px;
-            height: 50px;
-            border: none;
-            border-radius: 8px;
-            padding-left: 20px;
-            font-size: 16px;
-        }
-        .input:focus {
-            outline: none;
-        }
-        
+    
+}
+.tasks {
+    background-color: rgb(232, 232, 232);
+    margin: 20px;
+    width: 550px;
+    padding: 25px;
+    border-radius: 5px;
+}
+.form {
+    background-color: rgb(232, 232, 232);
+    margin: 20px;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
 
-        .add {
-            width: 120px;
-            height: 50px;
-            border: none;
-            border-radius: 8px;
-            background-color: rgb(255, 42, 0);
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-        }
-    }
-    .tasks {
-        background-color: rgb(232, 232, 232);
-        margin: 20px;
-        width: 550px;
-        padding: 25px;
-        border-radius: 5px;
-    }
+    
+}
+.input {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.input:focus {
+    outline: none;
+}
+
+
+.add {
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 42, 0);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .task {
@@ -82,4 +85,39 @@ body {
     }
 }
 
-
+@media(max-width: 700px) {
+    .form {
+        width: 400px;
+    }
+    .input {
+        width: 250px;
+    }
+    .add {
+        width: 75px;
+        font-size: 15px;
+    }
+    .tasks {
+        width: 400px;
+    }
+}
+@media(max-width: 500px) {
+    .form {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+    .input {
+        width: 90%;
+    }
+    .add {
+        width: 95%;
+        font-size: 15px;
+    }
+    .tasks {
+        width: 80%;
+    }
+}
